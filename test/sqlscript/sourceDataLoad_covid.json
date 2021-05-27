@@ -1,0 +1,17 @@
+{
+	"name": "sourceDataLoad_covid",
+	"properties": {
+		"content": {
+			"query": "create external data source covid\nwith ( location = 'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/ecdc_cases' );",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

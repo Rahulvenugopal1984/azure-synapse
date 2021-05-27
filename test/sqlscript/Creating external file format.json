@@ -1,0 +1,17 @@
+{
+	"name": "Creating external file format",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL FILE FORMAT PARQUETFILE  \nWITH (  \n    FORMAT_TYPE = PARQUET  \n    );",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "master"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

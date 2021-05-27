@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [weeknumber]\n,[uk_deaths]\n,[us_deaths]\n FROM [dbo].[covid_agg_us_uk]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

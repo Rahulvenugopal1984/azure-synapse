@@ -1,0 +1,17 @@
+{
+	"name": "weekly cases comparison",
+	"properties": {
+		"content": {
+			"query": "SELECT (DATEPART(week, CONVERT(VARCHAR, us.date_rep,101))) as weeknumber , sum(uk.[deaths] ) as uk_deaths,sum(us.[deaths]) as us_deaths\n FROM [dbo].[covid_us_data] us\n join [dbo].[covid_uk_data] uk\n on us.date_rep=uk.date_rep\n where us.year=2020\n group by DATEPART(week, CONVERT(VARCHAR, us.date_rep,101))\n order by weeknumber desc;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

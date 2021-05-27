@@ -1,0 +1,17 @@
+{
+	"name": "External_Data_source_creation",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL DATA SOURCE covid_uk2\nWITH\n(    LOCATION         = 'https://datalakesynapse84.dfs.core.windows.net/blobtolake/covid_ukdata'\n    \n)\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

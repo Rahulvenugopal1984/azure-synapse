@@ -1,0 +1,267 @@
+{
+	"name": "readblobusingpyspark",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "newsparkppol",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"0315c375-0288-486c-8a58-f16bd6b96904": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-30",
+										"_c3": "2020",
+										"_c5": "2",
+										"_c10": "Africa",
+										"_c0": "2020-07-30",
+										"_c4": "156",
+										"_c8": "SEN",
+										"_c1": "30",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-29",
+										"_c3": "2020",
+										"_c5": "4",
+										"_c10": "Africa",
+										"_c0": "2020-07-29",
+										"_c4": "41",
+										"_c8": "SEN",
+										"_c1": "29",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-28",
+										"_c3": "2020",
+										"_c5": "3",
+										"_c10": "Africa",
+										"_c0": "2020-07-28",
+										"_c4": "83",
+										"_c8": "SEN",
+										"_c1": "28",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-27",
+										"_c3": "2020",
+										"_c5": "4",
+										"_c10": "Africa",
+										"_c0": "2020-07-27",
+										"_c4": "129",
+										"_c8": "SEN",
+										"_c1": "27",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-26",
+										"_c3": "2020",
+										"_c5": "5",
+										"_c10": "Africa",
+										"_c0": "2020-07-26",
+										"_c4": "130",
+										"_c8": "SEN",
+										"_c1": "26",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-25",
+										"_c3": "2020",
+										"_c5": "4",
+										"_c10": "Africa",
+										"_c0": "2020-07-25",
+										"_c4": "156",
+										"_c8": "SEN",
+										"_c1": "25",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-24",
+										"_c3": "2020",
+										"_c5": "1",
+										"_c10": "Africa",
+										"_c0": "2020-07-24",
+										"_c4": "145",
+										"_c8": "SEN",
+										"_c1": "24",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-23",
+										"_c3": "2020",
+										"_c5": "3",
+										"_c10": "Africa",
+										"_c0": "2020-07-23",
+										"_c4": "136",
+										"_c8": "SEN",
+										"_c1": "23",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-22",
+										"_c3": "2020",
+										"_c5": "4",
+										"_c10": "Africa",
+										"_c0": "2020-07-22",
+										"_c4": "37",
+										"_c8": "SEN",
+										"_c1": "22",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									},
+									{
+										"_c11": "2021-05-19 00:06:57",
+										"_c13": "2020-07-21",
+										"_c3": "2020",
+										"_c5": "3",
+										"_c10": "Africa",
+										"_c0": "2020-07-21",
+										"_c4": "138",
+										"_c8": "SEN",
+										"_c1": "21",
+										"_c7": "SN",
+										"_c2": "7",
+										"_c12": "SN",
+										"_c6": "Senegal"
+									}
+								],
+								"schema": {
+									"_c0": "string",
+									"_c1": "string",
+									"_c2": "string",
+									"_c3": "string",
+									"_c4": "string",
+									"_c5": "string",
+									"_c6": "string",
+									"_c7": "string",
+									"_c8": "string",
+									"_c9": "string",
+									"_c10": "string",
+									"_c11": "string",
+									"_c12": "string",
+									"_c13": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"_c0"
+									],
+									"seriesFieldKeys": [
+										"_c0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/0fa3117d-c3e4-4a51-8437-c7cdb2a2a1e7/resourceGroups/azure-learning-resource/providers/Microsoft.Synapse/workspaces/samplesynapserahul/bigDataPools/newsparkppol",
+				"name": "newsparkppol",
+				"type": "Spark",
+				"endpoint": "https://samplesynapserahul.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/newsparkppol",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://blobtolake@datalakesynapse84.dfs.core.windows.net/covid_ukdata/ecdc_cases.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					"##, header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 2
+			}
+		]
+	}
+}

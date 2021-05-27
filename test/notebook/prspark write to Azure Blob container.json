@@ -1,0 +1,69 @@
+{
+	"name": "prspark write to Azure Blob container",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "newsparkppol",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/0fa3117d-c3e4-4a51-8437-c7cdb2a2a1e7/resourceGroups/azure-learning-resource/providers/Microsoft.Synapse/workspaces/samplesynapserahul/bigDataPools/newsparkppol",
+				"name": "newsparkppol",
+				"type": "Spark",
+				"endpoint": "https://samplesynapserahul.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/newsparkppol",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"new_rows = [('CA',22, 45000),(\"WA\",56,65000) ,(\"WA\",50,85000)]\n",
+					"demo_df = spark.createDataFrame(new_rows, ['state', 'age', 'salary'])\n",
+					"demo_df.show()\n",
+					"\n",
+					"demo_df.createOrReplaceTempView('demo_df')\n",
+					"demo_df.write.csv('demo_df', mode='overwrite')\n",
+					"demo_df.write.parquet('abfss://blobtolake@datalakesynapse84.dfs.core.windows.net/demodata/demo_df', mode='overwrite')\n",
+					"\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 16
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "agg_table_creation",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE covid_agg_us_uk\nWITH (\n    LOCATION = 'covid_agg_data/',\n    DATA_SOURCE = covid_aggdata,  \n    FILE_FORMAT = PARQUETFILE\n)  \nAS\nSELECT (DATEPART(week, CONVERT(VARCHAR, us.date_rep,101))) as weeknumber , sum(uk.[deaths] ) as uk_deaths,sum(us.[deaths]) as us_deaths\n FROM [dbo].[covid_us_data] us\n join [dbo].[covid_uk_data] uk\n on us.date_rep=uk.date_rep\n where us.year=2020\n group by DATEPART(week, CONVERT(VARCHAR, us.date_rep,101))\n order by weeknumber desc;\n\n\n-- CREATE EXTERNAL DATA SOURCE covid_aggdata\n-- WITH\n-- (    LOCATION         = 'https://datalakesynapse84.dfs.core.windows.net/blobtolake/covid_aggdata'\n    \n-- );\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

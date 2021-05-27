@@ -1,0 +1,271 @@
+{
+	"name": "Create Spark table",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "newsparkppol",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"438557ab-a108-4e70-9951-12369aa24b1a": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"date_rep": "2020-12-14",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "6",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-14",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "14",
+										"cases": "746",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-13",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "9",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-13",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "13",
+										"cases": "298",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-12",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "11",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-12",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "12",
+										"cases": "113",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-11",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "10",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-11",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "11",
+										"cases": "63",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-10",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "16",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-10",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "10",
+										"cases": "202",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-09",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "13",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-09",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "9",
+										"cases": "135",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-08",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "6",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-08",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "8",
+										"cases": "200",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-07",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "26",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-07",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "7",
+										"cases": "210",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-06",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "10",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-06",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "6",
+										"cases": "234",
+										"month": "12"
+									},
+									{
+										"date_rep": "2020-12-05",
+										"iso_country": "AF",
+										"load_date": "2021-05-19 00:06:57",
+										"country_territory_code": "AFG",
+										"deaths": "18",
+										"countries_and_territories": "Afghanistan",
+										"year": "2020",
+										"daterep": "2020-12-05",
+										"geo_id": "AF",
+										"continent_exp": "Asia",
+										"day": "5",
+										"cases": "235",
+										"month": "12"
+									}
+								],
+								"schema": {
+									"date_rep": "string",
+									"day": "string",
+									"month": "string",
+									"year": "string",
+									"cases": "string",
+									"deaths": "string",
+									"countries_and_territories": "string",
+									"geo_id": "string",
+									"country_territory_code": "string",
+									"pop_data_2018": "string",
+									"continent_exp": "string",
+									"load_date": "string",
+									"iso_country": "string",
+									"daterep": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"date_rep"
+									],
+									"seriesFieldKeys": [
+										"date_rep"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/0fa3117d-c3e4-4a51-8437-c7cdb2a2a1e7/resourceGroups/azure-learning-resource/providers/Microsoft.Synapse/workspaces/samplesynapserahul/bigDataPools/newsparkppol",
+				"name": "newsparkppol",
+				"type": "Spark",
+				"endpoint": "https://samplesynapserahul.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/newsparkppol",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://blobtolake@datalakesynapse84.dfs.core.windows.net/covid_ukdata/ecdc_cases.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					", header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))\r\n",
+					"\r\n",
+					"\r\n",
+					"spark.sql(\"CREATE DATABASE IF NOT EXISTS covid\")\r\n",
+					"df.write.mode(\"overwrite\").saveAsTable(\"covid.covid_data\")"
+				],
+				"attachments": null,
+				"execution_count": 5
+			}
+		]
+	}
+}

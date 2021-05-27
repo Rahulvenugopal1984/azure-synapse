@@ -1,0 +1,17 @@
+{
+	"name": "Daily_cases_comparison_UKvsUS",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) CONVERT(VARCHAR, us.date_rep,101),DATEPART(week, CONVERT(VARCHAR, us.date_rep,101)) as weeknumber\n,us.[day]\n,us.[month]\n,us.[year]\n,us.[cases] as us_cases\n,uk.[cases] as uk_cases \n,us.[deaths] as us_deaths\n,uk.[deaths] as uk_deaths\n,us.[geo_id]\n,uk.[geo_id]\n FROM [dbo].[covid_us_data] us\n join [dbo].[covid_uk_data] uk\n on us.date_rep=uk.date_rep\n where us.year=2020;\n\n SELECT DATEPART(week, CONVERT(VARCHAR, us.date_rep,101)), DATEPART(weekday, CONVERT(VARCHAR, us.date_rep,101)),CONVERT(VARCHAR, us.date_rep,101)\n FROM [dbo].[covid_us_data] us\n  where us.year=2020\n and us.month=08;\n\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "covidWorldwideData"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
